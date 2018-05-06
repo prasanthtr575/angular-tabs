@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
   selector: 'personal-info',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personal-info.component.scss']
 })
 export class PersonalInfoComponent implements OnInit {
+  tabs: TabsComponent;
 
-  constructor() { }
+  constructor(tabs: TabsComponent) { 
+    this.tabs = tabs;
+  }
 
   ngOnInit() {
   }
 
+  continue() {
+    this.tabs.arrangeTabs(1);
+  }
 }

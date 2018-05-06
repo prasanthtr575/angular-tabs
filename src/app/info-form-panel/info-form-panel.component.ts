@@ -12,4 +12,11 @@ export class InfoFormPanelComponent implements OnInit {
   ngOnInit() {
   }
 
+  previous() {
+
+  }
+
+  next() {
+    
+  }
 }

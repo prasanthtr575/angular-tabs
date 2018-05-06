@@ -1,10 +1,22 @@
 <div class="tab-panel">
-    <ul>
-        <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [ngClass]="tab.selected ? 'selected-tab' : ''">
-            <span class="dot">3</span> {{ tab.tabTitle }}
-        </li>
-    </ul>
-    <div class="tab-content">
-        <ng-content></ng-content>
+    <aside class="left-button">
+        <button (click)="previous()" [disabled]="leftBtnInActive">
+            <mark class="unicode" title="Previous">⟵</mark>
+        </button>
+    </aside>
+    <div class="tab-frame">
+        <ul>
+            <li *ngFor="let tab of tabs; index as i" (click)="selectTab(tab)" [ngClass]="tab.selected ? 'selected-tab' : ''">
+                <span class="dot">{{i + 1}}</span> {{ tab.tabTitle }}
+            </li>
+        </ul>
+        <div class="tab-content">
+            <ng-content></ng-content>
+        </div>
     </div>
+    <aside class="right-button">
+        <button (click)="next()" [disabled]="rightBtnInActive">
+            <mark class="unicode" title="Next">⟶</mark>
+        </button>
+    </aside>
 </div>

@@ -8,7 +8,7 @@ import { TabsComponent } from '../tabs/tabs.component';
 })
 export class TabComponent implements OnInit{
   @Input() tabTitle;
-  selected: boolean;
+  selected: boolean = false;
 
   constructor(tabs: TabsComponent) {
     tabs.addTab(this);
@@ -16,5 +16,4 @@ export class TabComponent implements OnInit{
 
   ngOnInit() {
   }
-
 }
