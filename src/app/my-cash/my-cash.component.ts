@@ -12,4 +12,9 @@ export class MyCashComponent implements OnInit {
   ngOnInit() {
   }
 
+  previous() {
+
+  } 
+  
+  next() {}
 }

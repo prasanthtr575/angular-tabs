@@ -1,4 +1,9 @@
 <div class="info-form-panel-container">
+    <aside class="left-button">
+        <button (click)="previous()">
+            <mark class="unicode" title="Previous">⟵</mark>
+        </button>
+    </aside>
     <tabs>
         <tab tabTitle="Foo">
             Content of tab Foo
@@ -7,4 +12,9 @@
             Content of tab Bar
         </tab>
     </tabs>
+    <aside class="right-button">
+        <button (click)="next()">
+            <mark class="unicode" title="Next">⟶</mark>
+        </button>
+    </aside>
 </div>

@@ -30,4 +30,12 @@ export class TabsComponent implements OnInit {
     tab.selected = true;
     this.selected.emit({selectedTab: tab});
   }
+
+  previous() {
+    debugger;
+  }
+
+  next() {
+    debugger;
+  }
 }

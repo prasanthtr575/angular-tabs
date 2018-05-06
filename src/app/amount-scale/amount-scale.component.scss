@@ -1,4 +1,13 @@
+$light-gray: #F2F6F7;
 .amount-scale-container {
-    border: 1px solid royalblue;
-    padding: 20px;
+    display: flex;
+    .spacer {
+        flex: 2;
+    }
+    section {
+        flex: 6;
+        background-color: $light-gray;
+        height: 100px;
+        border-radius: 4px;
+    }
 }
