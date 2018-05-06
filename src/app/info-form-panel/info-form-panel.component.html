@@ -1,15 +1,18 @@
 <div class="info-form-panel-container">
     <aside class="left-button">
-        <button (click)="previous()">
+        <button (click)="previous()" disabled>
             <mark class="unicode" title="Previous">⟵</mark>
         </button>
     </aside>
     <tabs>
-        <tab tabTitle="Foo">
-            Content of tab Foo
+        <tab tabTitle="PERSONAL INFO">
+            <personal-info></personal-info>
         </tab>
-        <tab tabTitle="Bar">
-            Content of tab Bar
+        <tab tabTitle="INCOME INFO">
+            <income-info></income-info>
+        </tab>
+        <tab tabTitle="INVESTMENT INFO">
+            <investment-info></investment-info>
         </tab>
     </tabs>
     <aside class="right-button">

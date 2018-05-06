@@ -1,0 +1,19 @@
+$pale-red: #FC5350;
+.income-info-container {
+    button {
+        border: none;
+        background-color: $pale-red;
+        padding: 8px 5px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 4px;
+    }
+    button:focus {
+        outline: none;
+    }
+    button:disabled,
+    button[disabled] {
+        background-color: #D5D5D5;
+        color: #fff;
+    }
+}

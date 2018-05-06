@@ -1,0 +1,24 @@
+$pale-red: #FC5350;
+.personal-info-container {
+    button {
+        border: none;
+        background-color: $pale-red;
+        padding: 8px 5px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 4px;
+        mark.unicode {
+            font-size: 2.5rem;
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+    button:focus {
+        outline: none;
+    }
+    button:disabled,
+    button[disabled] {
+        background-color: #D5D5D5;
+        color: #fff;
+    }
+}
