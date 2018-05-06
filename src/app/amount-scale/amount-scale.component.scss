@@ -7,7 +7,10 @@ $light-gray: #F2F6F7;
     section {
         flex: 6;
         background-color: $light-gray;
-        height: 100px;
         border-radius: 4px;
+        display: flex;
+        slider {
+            flex: 1;
+        }
     }
 }
