@@ -12,4 +12,7 @@ export class InvestmentInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  continue() {
+    alert("Submit your form by integrating with appropriate API!!!");
+  }
 }

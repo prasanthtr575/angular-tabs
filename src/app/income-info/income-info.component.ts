@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
   selector: 'income-info',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./income-info.component.scss']
 })
 export class IncomeInfoComponent implements OnInit {
-
-  constructor() { }
+  tabs: TabsComponent
+  constructor(tabs: TabsComponent) {
+    this.tabs = tabs;
+   }
 
   ngOnInit() {
+  }
+
+  continue() {
+    this.tabs.arrangeTabs(2);
   }
 
 }
