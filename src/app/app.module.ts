@@ -9,9 +9,7 @@ import { InfoFormPanelComponent } from './info-form-panel/info-form-panel.compon
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { IncomeInfoComponent } from './income-info/income-info.component';
 import { InvestmentInfoComponent } from './investment-info/investment-info.component';
-import { TabIndexComponent } from './tab-index/tab-index.component';
 import { SliderComponent } from './slider/slider.component';
-
 
 @NgModule({
   declarations: [
@@ -24,7 +22,6 @@ import { SliderComponent } from './slider/slider.component';
     PersonalInfoComponent,
     IncomeInfoComponent,
     InvestmentInfoComponent,
-    TabIndexComponent,
     SliderComponent
   ],
   imports: [
